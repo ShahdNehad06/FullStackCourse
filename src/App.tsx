@@ -1,10 +1,13 @@
-import Greeting from "./components/Greeting";
+import "./App.css";
+import { AuthProvider } from "./context/AuthProvider";
+import Content from "./components/Content";
 
 function App() {
   return (
-    <div>
-      <Greeting />
-    </div>
+    <AuthProvider>
+      <Content />
+    </AuthProvider>
   );
 }
+
 export default App;
